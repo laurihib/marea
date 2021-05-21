@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INICIO </title>
+    <link type="text/css" rel="stylesheet" href="css/estilo.css"/>
+</head>
+<body>
+<h1>INICIO</h1>
+<p> ESTA ES NUESTRA PAGINA WEB</p>
+     <nav>
+     <ul>
+     <li><a class="seleccionado">INICIO</a></li>
+     <li><a href="nosotros.html">NOSOTROS</a></li>
+     <li><a href="canciones.html">CANCIONES</a></li>
+     <li><a href="conciertos.html">CONCIERTOS</a></li>
+	 <li><a href="organizar concierto.html">ORGANIZAR CONCIERTO</a></li>
+</ul>
+</nav>
+<p>
+   <img id="mostrar-imagen" onclick="cambiarImagenn()" src="imagenes/marea.jpg"  width="300" height "250"/>
+   </p>
+   <p>¡Haz click para cambiar la imagen!</p>
+   <script>
+        function cambiarImagen() {
+		  var imagenMostrada = document.getElementById("mostrar-imagen");
+		  if (imagenMostrada.src.match("imagenes/marea.jpg")) {
+		      imagenMostrada.src = "imagenes/marea2.jpg";
+		}
+		 else {
+		       imagenmostrada.src = "imagenes/marea.jpg";
+		}
+	}
+	</script>
+</body>
+</html>
